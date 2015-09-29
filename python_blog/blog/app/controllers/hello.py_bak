@@ -1,0 +1,46 @@
+#!/bin/env python
+#coding=UTF8
+'''
+@version:0.6
+@online;2013-06-30
+@author:scpman
+@online_site:http://scpman.com http://ddser.com
+@mail:freeddser@gmail.com
+'''
+import web
+import config
+import application
+
+
+def do_sha1(k):
+        import hashlib
+        hash_new = hashlib.sha1(k)
+        hash_value = hash_new.hexdigest()
+        print hash_value
+        return hash_value
+
+
+class hello:
+    def GET(self):
+        token="scpman"
+        sign=web.input().signature
+        timestamp=web.input().timestamp
+        nonce=web.input().nonce
+        echostr=web.input().echostr
+        h=token
+        h+=str(timestamp)
+	h+=str(nonce)
+	h=list(h)
+	h.sort()
+	h1=''
+	for i in range(len(h)):
+		h1+=h[i]
+		print h[i]
+
+	print h1.upper()
+	res=do_sha1(h1.upper())
+
+        if res==sign:
+                return echostr
+        else:
+                return null

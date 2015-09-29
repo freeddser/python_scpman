@@ -1,0 +1,106 @@
+$def with(title,ulist,rightcont,xinqing,user_mes,link_site)
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<html xmlns:wb=“http://open.weibo.com/wb”>
+<script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js" type="text/javascript" charset="utf-8"></script>
+<meta property="wb:webmaster" content="db31b6d7a67d0dcb" />
+<meta name="baidu_union_verify" content="27317d92bee65fbee4bd6c422dc5bdab">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    $:title
+    <link rel="icon" type="image/vnd.microsoft.icon" href="/static/public/imgs/favicon.ico"/>
+    <link rel="stylesheet" type="text/css" href="/static/views/users/css/homepage.css" />
+    <script src="/static/public/js/now_time.js"></script>
+    <script src="/static/public/js/cuser.js"></script>
+    <script>
+        function opens(obj){
+            for(var i = 1;i<=3;i++){
+                if(i == obj){document.getElementById("dis"+i).style.display="block"
+                }else
+                    document.getElementById("dis"+i).style.display="none"
+            }
+        }
+    </script>
+
+</head>
+
+<body>
+
+<div id="web_rec">
+    <hr>
+</div>
+
+<div class="header">
+    <div id="banner"><script src="/static/public/js/guanggao.js"></script></div>
+</div>
+
+
+<div class="mainBox">
+<div id="left_box">
+    <div class="navLeftTop">
+        $:user_mes $:xinqing
+    </div>
+
+
+    <div class="top_search">
+        <div class="search_text"></div>
+        <span class="search_input"><input type="text" id="search_atcs" name="search_atcs" /></span>
+        <span class="search_bt">
+         <a href="#">
+            <img src="/static/views/users/images/search.jpg" onclick="atc_search()"/></a></span>
+    </div>
+
+
+    <div class="navLeft">
+
+        <div class="navLeftCenter">
+            <p class="left_title"><a href='/'><strong>原创资源列表</strong></a></p>
+            <ul>
+                $:ulist
+            </ul>
+
+        </div>
+        <div class="navLeftButtom"></div>
+    </div>
+
+
+</div>
+<div class="navRight">
+        <div class="navRightCenter">
+            <div class="content">
+            <div id="right_content">
+              $:rightcont
+
+            </div>
+            </div>
+        </div>
+        <div class="navRightButtom"></div>
+    </div>
+
+</div>
+</div>
+
+<div class="LinkClear"></div>
+
+<div id="urls_link">
+    <span>友情链接</span>
+    <div id="link_url">
+        <ul>
+        $:link_site
+         </ul>
+
+    </div>
+</div>
+<div class="footer">
+
+    <span>&nbsp;&copy;2013-2015 scpman.com <a href="mailto:freeddser@gmail.com?subject=来自ddser.com"/>联系作者</a></span>
+    <p id="datelabel">
+        <label id="labelTime">
+            <script type="text/javascript"> ShowDateTime();</script>
+        </label></p>
+</div>
+<div style="display:none;"> 
+<script type="text/javascript">var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Ff88741bb44e9739a396d50e9cbff246f' type='text/javascript'%3E%3C/script%3E"));</script></div>
+</body>
+</html>

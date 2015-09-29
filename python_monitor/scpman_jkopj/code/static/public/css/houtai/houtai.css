@@ -1,0 +1,75 @@
+/*
+ *version:0.6
+ *online;2013-06-30
+ *author:scpman
+ *online_site:http://scpman.com http://ddser.com
+ *mail:freeddser@gmail.com
+ */
+body{
+    width:100%;
+    background: #1D4266;
+    background-size:100% 100%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size:12px;
+    font-family: "宋体","黑体",Arial, Helvetica, sans-serif;
+    color:white;
+}
+
+.btnfont{
+    color:red;
+    background: #1D4266;
+    font-size:22px;
+}
+#login{
+    background: #336F8D;
+    width:400px;
+    height: 270px;
+    margin-left: 200px;
+    margin-top: 139px;
+    text-align: center;
+    position:absolute;
+}
+#login_hr{
+    background: #336F8D;
+    width:400px;
+    height: 80px;
+    text-align: left;
+}
+#login_tx{
+    background: #336F8D;
+    width:150px;
+    height: 80px;
+    margin-left: 10px;
+    margin-top: 10px;
+    text-align: center;
+    float:left
+
+}
+#login_tb{
+    background: #336F8D;
+    width:80px;
+    height: 100px;
+    margin-left: 10px;
+    margin-top: 10px;
+    text-align: center;
+    float:left
+
+}
+#wenzi{
+
+    position: absolute;
+    margin-top: 480;
+    margin-left: 150px;
+    font-size: 20px;
+}
+#footer{
+    clear:both;
+    margin-top: 600px;
+    margin-left: 400px;
+    position: absolute;
+    font-size:20px;
+}
+#labelTime{
+    font-size: 12px;
+}

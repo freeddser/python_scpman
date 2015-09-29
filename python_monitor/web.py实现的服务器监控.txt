@@ -1,0 +1,6 @@
+用户名：scpman
+密码 :scpman
+源代码下载
+http://www.scpman.com/static/upload/scpman_jk_1.0.tar
+操作文档下载：
+http://www.scpman.com/static/upload/readme.pdf

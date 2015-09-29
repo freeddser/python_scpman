@@ -1,0 +1,77 @@
+$def with(form,color,imgs,b)
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="/static/public/css/houtai/houtai.css">
+</head>
+
+<script src="/static/public/js/ht_wenzi.js" type="text/javascript"></script>
+<body onLoad="wz_print()">
+<h1 align="center"><font color='$color'>$:form</font></h1>
+
+
+
+<div id="login">
+    <div id='login_hr'>
+        <img src="/static/public/imgs/login_bt1.jpg"/>
+        <hr>
+    </div>
+    <div id="login_tx"><img src="/static/public/imgs/admimg.jpg"/></div>
+    <div id="login_tb">
+        <form method="POST">
+            <table bordercolor='red' border='0'>
+                <tr>
+                    <td>
+                        用户名:
+                    </td>
+                    <td>
+                        <input type="text" size='16' name="user">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        密&nbsp;&nbsp;码:
+                    </td>
+                    <td>
+                        <input type="password" size='16' name="passwd">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        验证码:
+                    </td>
+                    <td>
+                        <input type="input" size='4'  name="yzm">
+                        <img src="$:imgs"/>
+                    </td>
+                </tr>
+                <tr><td colspan='2'><hr></td></tr>
+                <tr align="center">
+
+                    <td >
+                        <input type="submit" class='btnfont' value="登录" name="login" >
+
+                    </td>
+                    <td>
+
+                        <input type="button" class='btnfont' value="重置" name="exit" onclick="location.href='/'">
+                    </td>
+                </tr>
+            </table>
+        </form>
+
+    </div>
+</div>
+<div id="wenzi">
+
+</div>
+<div id="footer">
+    &copy;2013 scpman.com <a href="mailto:freeddser@gmail.com?subject=来自ddser.com"/>联系作者</a>
+    <script src="/static/public/js/now_time.js" type="text/javascript"></script>
+    <br>
+    <label id="labelTime">
+        <script type="text/javascript"> ShowDateTime();</script>
+    </label>
+</div>
+</body>
+</html>

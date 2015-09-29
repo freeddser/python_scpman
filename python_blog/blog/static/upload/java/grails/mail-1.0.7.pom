@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<project xmlns='http://maven.apache.org/POM/4.0.0' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation='http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd'>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.grails.plugins</groupId>
+  <artifactId>mail</artifactId>
+  <packaging>zip</packaging>
+  <version>1.0.7</version>
+  <name>Provides Mail support to a running Grails application</name>
+  <description>This plug-in provides a MailService class as well as configuring the necessary beans within
+the Spring ApplicationContext.
+
+It also adds a "sendMail" method to all controller classes. A typical example usage is:
+
+sendMail {
+    to "fred@g2one.com","ginger@g2one.com"
+    from "john@g2one.com"
+    cc "marge@g2one.com", "ed@g2one.com"
+    bcc "joe@g2one.com"
+    subject "Hello John"
+    text "this is some text"
+}
+
+</description>
+  <url>http://grails.org/plugins/mail</url>
+  <licenses>
+    <license>
+      <name>Apache License 2.0</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+    </license>
+  </licenses>
+  <organization>
+    <name>Grails Plugin Collective</name>
+    <url>http://github.com/gpc</url>
+  </organization>
+  <developers>
+    <developer>
+      <name>Grails Plugin Collective</name>
+      <email>grails.plugin.collective@gmail.com</email>
+    </developer>
+    <developer>
+      <name>Craig Andrews</name>
+      <email>candrews@integralblue.com</email>
+    </developer>
+    <developer>
+      <name>Luke Daley</name>
+      <email>ld@ldaley.com</email>
+    </developer>
+    <developer>
+      <name>Peter Ledbrook</name>
+      <email>pledbrook@vmware.com</email>
+    </developer>
+    <developer>
+      <name>Jeff Brown</name>
+      <email>jbrown@vmware.com</email>
+    </developer>
+    <developer>
+      <name>Graeme Rocher</name>
+      <email>grocher@vmware.com</email>
+    </developer>
+    <developer>
+      <name>Marc Palmer</name>
+      <email>marc@grailsrocks.com</email>
+    </developer>
+  </developers>
+  <issueManagement>
+    <system>JIRA</system>
+    <url>http://jira.grails.org/browse/GPMAIL</url>
+  </issueManagement>
+  <scm>
+    <url>http://github.com/gpc/grails-mail</url>
+  </scm>
+  <dependencies>
+    <dependency>
+      <groupId>com.sun.mail</groupId>
+      <artifactId>javax.mail</artifactId>
+      <version>1.5.1</version>
+      <scope>runtime</scope>
+    </dependency>
+    <dependency>
+      <groupId>javax.mail</groupId>
+      <artifactId>javax.mail-api</artifactId>
+      <version>1.5.1</version>
+      <scope>compile</scope>
+    </dependency>
+  </dependencies>
+</project>

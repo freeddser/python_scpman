@@ -1,0 +1,279 @@
+
+#web_rec{
+    width:950px;
+    height:1px;
+    margin:0 auto;
+    padding:0;
+}
+
+#banner{
+    width:950px;
+    height:200px;
+}
+
+body{
+    margin:0;
+    padding:0;
+    font-family:'微软雅黑';
+    font-size:16px;
+    color: #C6C6C6;
+    background: #27343C; 
+
+
+}
+a{text-decoration:none;color:#89B276;}
+
+h1,h2,h3,h4,ul,li,dl,dt,dd,p,img{
+    margin:0;
+    padding:0;
+    list-style:none;
+    border:0;
+}
+/*header*/
+.header{
+    width:950px;
+    height:200px;
+    margin:0 auto;
+    padding:0;
+    margin-top: 0px;
+}
+
+#tianqi{
+    margin-left: 100px;
+    margin-top: 5px;
+}
+#xq_user{
+    margin-left: 100px;
+    margin-top: 5px;
+    font-size: 18px;
+    color:#8a2be2;
+}
+
+.mainBox{
+    width:950px;
+    margin:0 auto;
+    padding:0;
+}
+
+#left_box{
+    width: 210px;
+    padding: 0;
+    margin: 0;
+    float: left;
+}
+.navLeft{
+    width:210px;
+    float:left;
+    border: solid 1px green;
+}
+
+#tx_id{
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 13px;
+    text-align: left;
+}
+#tx_id li{
+    margin-top: 1px;
+    margin-left: 10px;
+
+}
+.navLeftTop{
+    width:210px;
+    height:460px;
+    border:solid 1px gray;
+}
+
+.navLeftCenter{
+    width:210px;
+}
+.navLeftCenter p{
+    width:210px;
+    height:40px;
+    line-height:35px;
+    text-align:center;
+    font-size:16px;
+}
+.navLeftCenter p a{color:#FFF;background: #000;}
+
+.navLeftCenter ul{
+    width:210px;
+    padding-left:8px;
+
+}
+
+.navLeftCenter ul li{
+    width:168px;
+    height:40px;
+    line-height:35px;
+    text-align:center;
+    font-size:14px;
+
+
+}
+
+.navLeftCenter ul li a:link,.navLeftCenter ul li a:visited{
+    color:#C6C6C6;
+    text-decoration:none;
+}
+
+.navLeftCenter ul li a:hover{
+    color:#C6C6C6;
+    text-decoration:none;
+}
+
+.navLeftButtom{
+    width:210px;
+    height:35px;
+
+}
+
+.navRight{
+    margin:0,0,0,3px;
+    padding:0;
+    width:736px;
+    float:left;
+}
+.atc_list_title{
+    margin-top: 2px;
+    margin-left: 10px;
+    font-size: 16px;
+
+}
+
+
+.navRightCenter{
+    width:736px;
+
+}
+
+.content{
+    width:734px;
+    margin-left:5px;
+    margin-top:10px;
+    margin-right:15px;
+    margin-buttom:10px;
+}
+#right_content{
+    width:734px;
+    margin-left:5px;
+    margin-top:5px;
+    margin-right:5px;
+    margin-buttom:5px;
+
+}
+#atc_title{
+    text-align: center;
+}
+#atc_user{
+    font-size: 10px;
+    text-align: center;
+}
+
+.atc_text{
+    width: 734px;
+
+}
+
+#right_footer{
+    width: 735px;
+    height:50px;
+    margin-top: 100px;
+    font-size:16px;
+    color: #7D7D7D;
+    text-align: center;
+    float: left;
+
+}
+
+.top_search{
+    width:205px;
+    height:30px;
+    margin:0px 10px 0 0;
+    float:left;
+    background:url(/static/views/users/images/search_bar_line.png) repeat-x;
+    padding-left:5px;
+    border-left:1px solid #4B494A;
+    border-right:1px solid #4B494A;
+}
+
+.search_input input{
+    width:160px;
+    height:20px;
+    float:left;
+    margin:3px 0 0 0 ;
+    border:1px solid #4B494A;
+    border-bottom-color:#ffffff;
+    border-right-color:#ffffff;
+}
+
+.search_bt{
+    width:18px;
+    height:17px;
+    float:left;
+    padding:6px 3px 0 13px;
+}
+
+.LinkClear{
+    clear:both;
+    height:20px;
+    width:950px;
+}
+
+#urls_link{
+    width:950px;
+    height:90px;
+    padding:0;
+    background: #72797D;
+    font-family:"宋体";
+    margin:0 auto;
+
+}
+#urls_link span{
+    padding-top:5px;
+    display:block;
+    width:28px;
+    height:85px;
+    background:#3F494F;
+    color:#F0F0F0;
+    float: left;
+    text-align: center;
+}
+
+#link_url ul{
+    width:900px;
+    height:80px;
+    padding-top: 10px;
+}
+
+#link_url ul li{
+    width: 120px;
+    float: left;
+    text-align:center;
+    padding-bottom: 6px;
+}
+
+#link_url ul li a:link,#link_url ul li a:visited{
+
+    text-decoration: none;
+    color: #B5B9BC;
+}
+
+
+.footer{
+    width:950px;
+    height:100px;
+    margin:0 auto;
+    margin-top: 50px;
+    padding:0;
+    font-size: 24px;
+    text-align: center;
+
+}
+
+#datelabel{
+    margin-left: 250px;
+   font-size: 12px;
+
+}

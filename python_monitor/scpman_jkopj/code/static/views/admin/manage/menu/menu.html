@@ -1,0 +1,40 @@
+$def with(userinfo,context,viewlist)
+
+<html  xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html"
+      xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<link rel="stylesheet" href="/static/public/css/houtai/manager.css">
+<script src="/static/public/js/js_public.js" type="text/javascript"></script>
+<body>
+
+<div id="nav_top" />
+<em>SCPMAN 运维管理中心</em>
+<span>
+欢迎回来 $SESSION.user <a href="/reset/">退出</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.scpman.com" target="_blank">去项目官网</a>
+</span>
+
+</div>
+<hr>
+<div id="nav_left">
+$:viewlist
+</div>
+<div id="show_text" >
+$:userinfo
+$:context
+</div>
+
+<div id="footer">
+    <hr>
+    &copy;2013 <a href="http://www.scpman.com">scpman.com</a> <a href="mailto:freeddser@gmail.com?subject=来自ddser.com"/>联系作者</a>
+    <script src="/static/public/js/now_time.js" type="text/javascript"></script>
+    <br>
+        <label id="labelTime">
+            <script type="text/javascript"> ShowDateTime();</script>
+        </label>
+
+</div>
+
+</body>
+</html>
